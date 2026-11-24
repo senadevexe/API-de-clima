@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Previsão do Tempo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Clima Agora</h1>
+
+    <form id="form-busca" class="busca">
+      <input
+        type="text"
+        id="cidade-input"
+        placeholder="Digite a cidade (ex: Recife, São Paulo)"
+        required
+      />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <p id="status" class="status"></p>
+
+    <section id="resultado" class="resultado oculto">
+      <h2 id="nome-cidade"></h2>
+      <div class="temp-principal">
+        <span id="icone-clima"></span>
+        <span id="temperatura"></span>
+      </div>
+      <p id="descricao-clima" class="descricao"></p>
+
+      <div class="detalhes">
+        <div>
+          <span>Umidade</span>
+          <strong id="umidade"></strong>
+        </div>
+        <div>
+          <span>Vento</span>
+          <strong id="vento"></strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
